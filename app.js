@@ -2420,7 +2420,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n    font-family: 'Roboto';\n    font-weight: 300;\n    background-color: #272727;\n}\n\n.timeContainer span {\n    display: block;\n}\n\n.timeContainer {\n    color: #fff;\n}\n\n.time {\n    font-size: 72px;\n}\n\n.main-container {\n    margin-top: 20%;\n}\n", ""]);
+exports.push([module.i, "body {\n    font-family: 'Roboto';\n    font-weight: 300;\n    background-color: #272727;\n}\n\n.timeContainer span {\n    display: block;\n}\n\n.timeContainer {\n    color: #fff;\n}\n\n.time {\n    font-size: 72px;\n}\n\n.main-container {\n    margin-top: 20%;\n}\n\n.btn {\n    background: #2BA0A0;\n    color: #fff;\n}\n\n.messages {\n    margin-top: 15px;\n}\n\n.controls {\n    margin-top: 10px;\n}\n", ""]);
 
 // exports
 
@@ -11203,7 +11203,7 @@ var _user$project$Main$view = function (model) {
 				_elm_lang$html$Html$div,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('main-container col-2 px2 mx-auto'),
+					_0: _elm_lang$html$Html_Attributes$class('main-container col-4 px2 mx-auto'),
 					_1: {ctor: '[]'}
 				},
 				{
@@ -11221,7 +11221,7 @@ var _user$project$Main$view = function (model) {
 								_elm_lang$html$Html$span,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('time'),
+									_0: _elm_lang$html$Html_Attributes$class('time center'),
 									_1: {ctor: '[]'}
 								},
 								{
@@ -11236,7 +11236,7 @@ var _user$project$Main$view = function (model) {
 									_elm_lang$html$Html$span,
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$class('timeMessage'),
+										_0: _elm_lang$html$Html_Attributes$class('timeMessage center'),
 										_1: {ctor: '[]'}
 									},
 									{
@@ -11253,7 +11253,7 @@ var _user$project$Main$view = function (model) {
 							_elm_lang$html$Html$div,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('messages'),
+								_0: _elm_lang$html$Html_Attributes$class('messages center'),
 								_1: {ctor: '[]'}
 							},
 							{
@@ -11262,8 +11262,12 @@ var _user$project$Main$view = function (model) {
 									_elm_lang$html$Html$button,
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Code),
-										_1: {ctor: '[]'}
+										_0: _elm_lang$html$Html_Attributes$class('btn'),
+										_1: {
+											ctor: '::',
+											_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Code),
+											_1: {ctor: '[]'}
+										}
 									},
 									{
 										ctor: '::',
@@ -11276,8 +11280,12 @@ var _user$project$Main$view = function (model) {
 										_elm_lang$html$Html$button,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Social),
-											_1: {ctor: '[]'}
+											_0: _elm_lang$html$Html_Attributes$class('btn'),
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Social),
+												_1: {ctor: '[]'}
+											}
 										},
 										{
 											ctor: '::',
@@ -11290,8 +11298,12 @@ var _user$project$Main$view = function (model) {
 											_elm_lang$html$Html$button,
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Coffee),
-												_1: {ctor: '[]'}
+												_0: _elm_lang$html$Html_Attributes$class('btn'),
+												_1: {
+													ctor: '::',
+													_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Coffee),
+													_1: {ctor: '[]'}
+												}
 											},
 											{
 												ctor: '::',
@@ -11308,7 +11320,7 @@ var _user$project$Main$view = function (model) {
 								_elm_lang$html$Html$div,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('controls'),
+									_0: _elm_lang$html$Html_Attributes$class('controls center'),
 									_1: {ctor: '[]'}
 								},
 								{
@@ -11317,8 +11329,12 @@ var _user$project$Main$view = function (model) {
 										_elm_lang$html$Html$button,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Play),
-											_1: {ctor: '[]'}
+											_0: _elm_lang$html$Html_Attributes$class('btn'),
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Play),
+												_1: {ctor: '[]'}
+											}
 										},
 										{
 											ctor: '::',
@@ -11331,8 +11347,12 @@ var _user$project$Main$view = function (model) {
 											_elm_lang$html$Html$button,
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Pause),
-												_1: {ctor: '[]'}
+												_0: _elm_lang$html$Html_Attributes$class('btn'),
+												_1: {
+													ctor: '::',
+													_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Pause),
+													_1: {ctor: '[]'}
+												}
 											},
 											{
 												ctor: '::',
