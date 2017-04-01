@@ -2,6 +2,7 @@ module Main exposing (..)
 
 import Html exposing (..)
 import Html.Events exposing (onClick)
+import Html.Attributes exposing (..)
 import Time exposing (Time)
 
 
@@ -96,12 +97,20 @@ showTime time =
 view : Model -> Html Msg
 view model =
     div
-        []
-        [
-          h1 [] [ model.time |> showTime |> text ]
-          , button [ onClick Code ] [ text "Code" ]
-          , button [ onClick Social ] [ text "Social" ]
-          , button [ onClick Coffee ] [ text "Coffee" ]
-          , button [ onClick Play ] [ text "Play" ]
-          , button [ onClick Pause ] [ text "Pause" ]
+        [ class "clearfix mxn2" ]
+        [ div [class "col-2 px2 mx-auto"]
+            [ div [ class "time" ]
+                [ span [] [ model.time |> showTime |> text ]
+                , span [] [ text "It's code time" ]
+                ]
+            , div [ class "messages" ]
+                [ button [ onClick Code ] [ text "Code" ]
+                , button [ onClick Social ] [ text "Social" ]
+                , button [ onClick Coffee ] [ text "Coffee" ]
+                ]
+            , div [ class "controls" ]
+                [ button [ onClick Play ] [ text "Play" ]
+                , button [ onClick Pause ] [ text "Pause" ]
+                ]
+            ]
         ]
