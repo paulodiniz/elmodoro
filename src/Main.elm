@@ -79,7 +79,7 @@ showTime : Time -> String
 showTime time =
     let
         minutes_ =
-            toString (floor (time / Time.minute))
+            (time / Time.minute) |> floor |> toString
 
         seconds_ =
             round (time) % round (Time.minute) // round (Time.second) |> toString
