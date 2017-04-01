@@ -98,7 +98,7 @@ var _user$project$Main$view = function (model) {
 				_elm_lang$html$Html$div,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('col-2 px2 mx-auto'),
+					_0: _elm_lang$html$Html_Attributes$class('main-container col-2 px2 mx-auto'),
 					_1: {ctor: '[]'}
 				},
 				{
@@ -107,14 +107,18 @@ var _user$project$Main$view = function (model) {
 						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('time'),
+							_0: _elm_lang$html$Html_Attributes$class('timeContainer'),
 							_1: {ctor: '[]'}
 						},
 						{
 							ctor: '::',
 							_0: A2(
 								_elm_lang$html$Html$span,
-								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('time'),
+									_1: {ctor: '[]'}
+								},
 								{
 									ctor: '::',
 									_0: _elm_lang$html$Html$text(
@@ -125,7 +129,11 @@ var _user$project$Main$view = function (model) {
 								ctor: '::',
 								_0: A2(
 									_elm_lang$html$Html$span,
-									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('timeMessage'),
+										_1: {ctor: '[]'}
+									},
 									{
 										ctor: '::',
 										_0: _elm_lang$html$Html$text('It\'s code time'),

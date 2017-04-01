@@ -98,10 +98,10 @@ view : Model -> Html Msg
 view model =
     div
         [ class "clearfix mxn2" ]
-        [ div [class "col-2 px2 mx-auto"]
-            [ div [ class "time" ]
-                [ span [] [ model.time |> showTime |> text ]
-                , span [] [ text "It's code time" ]
+        [ div [class "main-container col-2 px2 mx-auto"]
+            [ div [class "timeContainer"]
+                [ span [ class "time" ] [ model.time |> showTime |> text ]
+                , span [ class "timeMessage"] [ text "It's code time" ]
                 ]
             , div [ class "messages" ]
                 [ button [ onClick Code ] [ text "Code" ]

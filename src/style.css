@@ -1,3 +1,21 @@
-.time span {
+body {
+    font-family: 'Roboto';
+    font-weight: 300;
+    background-color: #272727;
+}
+
+.timeContainer span {
     display: block;
+}
+
+.timeContainer {
+    color: #fff;
+}
+
+.time {
+    font-size: 72px;
+}
+
+.main-container {
+    margin-top: 20%;
 }
