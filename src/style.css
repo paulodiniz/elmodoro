@@ -19,3 +19,16 @@ body {
 .main-container {
     margin-top: 20%;
 }
+
+.btn {
+    background: #2BA0A0;
+    color: #fff;
+}
+
+.messages {
+    margin-top: 15px;
+}
+
+.controls {
+    margin-top: 10px;
+}

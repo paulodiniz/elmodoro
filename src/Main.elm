@@ -15,23 +15,16 @@ main =
         , subscriptions = subscriptions
         }
 
-
-
 -- MODEL
-
 
 type alias Model =
     { time : Time, paused : Bool }
-
 
 init : ( Model, Cmd Msg )
 init =
     ( { time = 25 * Time.minute, paused = False }, Cmd.none )
 
-
-
 -- UPDATE
-
 
 type Msg
     = Tick Time
@@ -98,19 +91,19 @@ view : Model -> Html Msg
 view model =
     div
         [ class "clearfix mxn2" ]
-        [ div [class "main-container col-2 px2 mx-auto"]
+        [ div [class "main-container col-4 px2 mx-auto"]
             [ div [class "timeContainer"]
-                [ span [ class "time" ] [ model.time |> showTime |> text ]
-                , span [ class "timeMessage"] [ text "It's code time" ]
+                [ span [ class "time center" ] [ model.time |> showTime |> text ]
+                , span [ class "timeMessage center"] [ text "It's code time" ]
                 ]
-            , div [ class "messages" ]
-                [ button [ onClick Code ] [ text "Code" ]
-                , button [ onClick Social ] [ text "Social" ]
-                , button [ onClick Coffee ] [ text "Coffee" ]
+            , div [ class "messages center" ]
+                [ button [ class "btn", onClick Code ] [ text "Code" ]
+                , button [ class "btn", onClick Social ] [ text "Social" ]
+                , button [ class "btn", onClick Coffee ] [ text "Coffee" ]
                 ]
-            , div [ class "controls" ]
-                [ button [ onClick Play ] [ text "Play" ]
-                , button [ onClick Pause ] [ text "Pause" ]
+            , div [ class "controls center" ]
+                [ button [ class "btn", onClick Play ] [ text "Play" ]
+                , button [ class "btn", onClick Pause ] [ text "Pause" ]
                 ]
             ]
         ]
