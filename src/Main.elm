@@ -97,11 +97,11 @@ view : Model -> Html Msg
 view model =
     div
         []
-        [ h1 [] [ text "Pomodoro" ]
-        , p [] [ model.time |> showTime |> text ]
-        , button [ onClick Code ] [ text "Code" ]
-        , button [ onClick Social ] [ text "Social" ]
-        , button [ onClick Coffee ] [ text "Coffee" ]
-        , button [ onClick Play ] [ text "Play" ]
-        , button [ onClick Pause ] [ text "Pause" ]
+        [
+          h1 [] [ model.time |> showTime |> text ]
+          , button [ onClick Code ] [ text "Code" ]
+          , button [ onClick Social ] [ text "Social" ]
+          , button [ onClick Coffee ] [ text "Coffee" ]
+          , button [ onClick Play ] [ text "Play" ]
+          , button [ onClick Pause ] [ text "Pause" ]
         ]

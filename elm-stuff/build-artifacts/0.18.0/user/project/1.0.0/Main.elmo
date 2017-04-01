@@ -95,18 +95,22 @@ var _user$project$Main$view = function (model) {
 				{ctor: '[]'},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('Pomodoro'),
+					_0: _elm_lang$html$Html$text(
+						_user$project$Main$showTime(model.time)),
 					_1: {ctor: '[]'}
 				}),
 			_1: {
 				ctor: '::',
 				_0: A2(
-					_elm_lang$html$Html$p,
-					{ctor: '[]'},
+					_elm_lang$html$Html$button,
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html$text(
-							_user$project$Main$showTime(model.time)),
+						_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Code),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('Code'),
 						_1: {ctor: '[]'}
 					}),
 				_1: {
@@ -115,12 +119,12 @@ var _user$project$Main$view = function (model) {
 						_elm_lang$html$Html$button,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Code),
+							_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Social),
 							_1: {ctor: '[]'}
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('Code'),
+							_0: _elm_lang$html$Html$text('Social'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
@@ -129,12 +133,12 @@ var _user$project$Main$view = function (model) {
 							_elm_lang$html$Html$button,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Social),
+								_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Coffee),
 								_1: {ctor: '[]'}
 							},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Social'),
+								_0: _elm_lang$html$Html$text('Coffee'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {
@@ -143,12 +147,12 @@ var _user$project$Main$view = function (model) {
 								_elm_lang$html$Html$button,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Coffee),
+									_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Play),
 									_1: {ctor: '[]'}
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('Coffee'),
+									_0: _elm_lang$html$Html$text('Play'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
@@ -157,30 +161,15 @@ var _user$project$Main$view = function (model) {
 									_elm_lang$html$Html$button,
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Play),
+										_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Pause),
 										_1: {ctor: '[]'}
 									},
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html$text('Play'),
+										_0: _elm_lang$html$Html$text('Pause'),
 										_1: {ctor: '[]'}
 									}),
-								_1: {
-									ctor: '::',
-									_0: A2(
-										_elm_lang$html$Html$button,
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html_Events$onClick(_user$project$Main$Pause),
-											_1: {ctor: '[]'}
-										},
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html$text('Pause'),
-											_1: {ctor: '[]'}
-										}),
-									_1: {ctor: '[]'}
-								}
+								_1: {ctor: '[]'}
 							}
 						}
 					}
