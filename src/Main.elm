@@ -2,7 +2,7 @@ module Main exposing (..)
 
 import Html exposing (..)
 import Html.Events exposing (onClick)
-import Html.Attributes exposing (..)
+import Html.Attributes exposing (class)
 import Time exposing (Time)
 
 
@@ -14,6 +14,7 @@ main =
         , update = update
         , subscriptions = subscriptions
         }
+
 
 -- MODEL
 
@@ -44,7 +45,7 @@ update msg model =
                     ( model, Cmd.none )
 
                 False ->
-                    ( { model | time = model.time - Time.second }, Cmd.none )
+                    ( { model | time = max 0 (model.time - Time.second) }, Cmd.none )
 
         Code ->
             ( { model | time = 25 * Time.minute, paused = False }, Cmd.none )
