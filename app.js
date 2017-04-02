@@ -11129,7 +11129,9 @@ var _user$project$Main$update = F2(
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
-							{time: model.time - _elm_lang$core$Time$second}),
+							{
+								time: A2(_elm_lang$core$Basics$max, 0, model.time - _elm_lang$core$Time$second)
+							}),
 						_1: _elm_lang$core$Platform_Cmd$none
 					};
 				}
